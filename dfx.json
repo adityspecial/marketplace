@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "marketplace_backend": {
+      "main": "src/marketplace_backend/main.mo",
+      "type": "motoko"
+    },
+    "marketplace_frontend": {
+      "dependencies": [
+        "marketplace_backend"
+      ],
+      "source": [
+        "src/marketplace_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "marketplace_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
